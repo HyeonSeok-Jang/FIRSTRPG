@@ -14,6 +14,7 @@ public class DDRGame extends JFrame implements Runnable{
 	
 	private int count;
 	public DDRGame(int num,int x, int y) {
+		setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
 		count = num;
 		setIconImage(Toolkit.getDefaultToolkit().getImage("src\\Source\\Icon.png"));
 		setTitle("¥ÌΩ∫≈∏¿”");

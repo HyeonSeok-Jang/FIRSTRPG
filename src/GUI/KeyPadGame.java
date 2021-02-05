@@ -15,6 +15,7 @@ public class KeyPadGame extends JFrame implements Runnable{
 //	}
 	public KeyPadGame(int num, int x, int y) {
 //		numth = 1;
+		setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
 		numth=num;
 		for(int i = 0;i<btn.length;i++) {
 			btnOnOff[i]=false;

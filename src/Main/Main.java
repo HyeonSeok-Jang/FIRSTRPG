@@ -176,6 +176,7 @@ public class Main extends JFrame implements Runnable, KeyListener{
 			nickName[i]=new NickName();
 			add(nickName[i]);
 		}
+		add(ms);
 		add(skipNext);
 		add(rtnBtn);
 		add(tStgBtn);
@@ -198,7 +199,7 @@ public class Main extends JFrame implements Runnable, KeyListener{
 		add(hp);
 		add(hpTong);
 		add(potion);
-		add(ms);
+		
 
 		add(st1Yuusha);
 		add(st1Slime);
@@ -342,6 +343,7 @@ public class Main extends JFrame implements Runnable, KeyListener{
 				skipNext.setVisible(false);
 				st1startpressed=false;
 				BGMIng = false;
+				stage = 13;
 				break;
 			case 3://script 16EA
 				// TODO St3
@@ -482,16 +484,14 @@ public class Main extends JFrame implements Runnable, KeyListener{
 				startIng("컨트롤러");
 				endIng();
 				
-				panelCh1=new superOfImg(570,230,200,275,"src\\Source\\Character\\사천왕_1_normal.png");
+				panelCh1.setImg("src\\Source\\Character\\사천왕_1_normal.png");
+				panelCh1.setBounds(570,230,200,275);
 				panelCh1.setVisible(true);
 				yuushaEndMove();
 				panelCh1.setVisible(false);
 				break;
 			case 8://script 29EA
 				// TODO St8
-				bgm = new BGM(4);
-				bgmThread = new Thread(bgm, "배경음악");
-				bgmThread.start();
 				face.setYuushaFace(3);
 				firstIng("용사");
 				face.setYuushaFace(4);
@@ -506,8 +506,6 @@ public class Main extends JFrame implements Runnable, KeyListener{
 				startIng("살라만다");
 				nickName[0].setPosition(700,195,160,30);
 				nickName[0].setMoveOpaque("src\\Source\\GUI\\Name\\살라만다\\", ".png", -2, 50);
-				Thread nickSa2 = new Thread(nickName[0], "살라만다");
-				nickSa2.start();
 				startIng("용사");
 				startIng("살라만다");
 				startIng("살라만다");
@@ -534,9 +532,6 @@ public class Main extends JFrame implements Runnable, KeyListener{
 				face.setYuushaFace(4);
 				startIng("용사");
 				startIng("살라만다");
-				BGM.clip.stop();
-				bgm = new BGM(stage);
-				bgmThread = new Thread(bgm, "배경음악");
 				bgmThread.start();
 				yesOrNo("살라만다","용사");
 				face.setYuushaFace(3);
@@ -553,6 +548,7 @@ public class Main extends JFrame implements Runnable, KeyListener{
 				miniGameAvoid("살라만다",1);
 				endIng();
 				Thread insane = new Thread(salamander, "광란의 파티");
+				answerClickChoose = false;
 				insane.start();
 				salamander.setVisible(true);
 				yuushaEndMove();
@@ -806,6 +802,9 @@ public class Main extends JFrame implements Runnable, KeyListener{
 			case 13:
 				System.out.println(YuushaStatus.getTime());
 				System.out.println(YuushaStatus.isPrincessLive());
+				hp.setVisible(false);
+				hpTong.setVisible(false);
+				potion.setVisible(false);
 				bgmThread.start();
 				skipNext.setImg("src\\Source\\GUI\\다음-1.png");
 				st1startpressed=true;
@@ -1065,9 +1064,10 @@ public class Main extends JFrame implements Runnable, KeyListener{
 	
 	private void yesOrNoKing(String str) {
 		//str = 다음에 이야기 할 캐릭터 이름...
+		YesOrNo ynn;
 		scriptContents.removeMouseListener(scriptContentsListener);
 		while(!(Main.answer == 0)) {
-			YesOrNo ynn = new YesOrNo(0,script,this.getX(),this.getY());
+			ynn = new YesOrNo(0,script,this.getX(),this.getY());
 			Thread ynnSel = new Thread(ynn, "선택창...");
 			ynnSel.start();
 			answerClickChoose=false;
@@ -1275,6 +1275,7 @@ public class Main extends JFrame implements Runnable, KeyListener{
 		while(!answerClickChoose) {
 			try {
 				if(YuushaStatus.getCondition()==38&&portal.getX()-yuusha.getX()<100) {
+					YuushaStatus.setCondition(0);
 					answerClickChoose=true;
 					move = false;
 					break;

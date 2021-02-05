@@ -64,10 +64,11 @@ public class BGM implements Runnable{
 	        
 	    }catch (Exception exc){
 	    }
-		clip.loop(clip.LOOP_CONTINUOUSLY);
+		
 	}
 	@Override
 	public void run() {
+		clip.loop(clip.LOOP_CONTINUOUSLY);
 		// TODO Auto-generated method stub
 		BGM.clip.start();
 	}

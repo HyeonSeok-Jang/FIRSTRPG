@@ -94,7 +94,7 @@ public class Yuusha extends superOfImg implements Runnable{
 				for(int i = 1;i<=4;i++) {
 					if(Main.isAnswerClickChoose())break;
 					setImg("src\\Source\\Character\\좌우반전\\주인공_run_"+i+".png");
-					setBounds(getX()-10, getY(), getWidth(), getHeight());
+					setBounds(getX()-20, getY(), getWidth(), getHeight());
 					waitSecond(150);
 				}
 				YuushaStatus.setCondition(0);
@@ -107,7 +107,7 @@ public class Yuusha extends superOfImg implements Runnable{
 				for(int i = 1;i<=4;i++) {
 					if(Main.isAnswerClickChoose())break;
 					setImg("src\\Source\\Character\\주인공_run_"+i+".png");
-					setBounds(getX()+10, getY(), getWidth(), getHeight());
+					setBounds(getX()+20, getY(), getWidth(), getHeight());
 					waitSecond(150);
 				}
 				Main.setMovePress(true);

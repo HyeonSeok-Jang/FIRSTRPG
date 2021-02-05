@@ -11,6 +11,7 @@ public class AvoidGame extends JFrame implements Runnable{
 	private JLabel backG = new JLabel();
 	private JPanel panel = new JPanel();
 	public AvoidGame(int x, int y){
+		setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
 		setIconImage(Toolkit.getDefaultToolkit().getImage("src\\Source\\Icon.png"));
 		setTitle("ÇÇÇØ¶ó!");
 		setSize(750,750);

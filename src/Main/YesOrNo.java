@@ -48,6 +48,7 @@ public class YesOrNo extends JFrame implements Runnable{
 		setTitle("º±≈√¡ﬂ...");
 		setResizable(false);
 //		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
 		setLocation(x,y);
 		setLayout(null);
 		yes.setBounds(0, 0, 480, 300);

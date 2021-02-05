@@ -9,6 +9,7 @@ public class TerminateGame extends JFrame implements Runnable{
 	private JLabel[] enemy = new JLabel[3];
 	private JLabel backG = new JLabel();
 	public TerminateGame(int stage, int x, int y) {
+		setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
 		setIconImage(Toolkit.getDefaultToolkit().getImage("src\\Source\\Icon.png"));
 		setTitle("적들을 물리쳐라!");
 		setSize(500,500);
@@ -158,7 +159,7 @@ public class TerminateGame extends JFrame implements Runnable{
 			break;
 		case 11:
 			enemyHp[0]=10;
-			enemy[0].setIcon(new ImageIcon("src\\Source\\Character\\마왕_normal.png.png"));
+			enemy[0].setIcon(new ImageIcon("src\\Source\\Character\\마왕_normal.png"));
 			enemy[0].setBounds((int)(Math.random()*350), (int)(Math.random()*350), 132, 182);
 			break;
 			

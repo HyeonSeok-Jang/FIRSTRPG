@@ -17,8 +17,7 @@ public class Hp_Bar extends superOfImg implements Runnable{
 		while(Main.isHpIng()) {
 //		while(true) {
 			System.out.println("회전중 체력바");
-//			setImg("src\\Source\\GUI\\HP_P_Bar_10.png");
-			setImg("src\\Source\\GUI\\HP_P_Bar_"+(YuushaStatus.getHp()/10)+".png");
+			setIcon(new ImageIcon(new ImageIcon("src\\Source\\GUI\\HP_P_Bar_"+(YuushaStatus.getHp()/10)+".png").getImage().getScaledInstance(400, 26, Image.SCALE_SMOOTH)));
 //			setIcon(new ImageIcon(new ImageIcon().getImage().getScaledInstance(400, 26, Image.SCALE_SMOOTH)));
 			this.repaint();
 			try {
