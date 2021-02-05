@@ -343,7 +343,6 @@ public class Main extends JFrame implements Runnable, KeyListener{
 				skipNext.setVisible(false);
 				st1startpressed=false;
 				BGMIng = false;
-				stage = 13;
 				break;
 			case 3://script 16EA
 				// TODO St3

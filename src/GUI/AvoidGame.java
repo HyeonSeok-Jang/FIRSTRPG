@@ -28,17 +28,11 @@ public class AvoidGame extends JFrame implements Runnable{
 		panel.add(backG);
 		setVisible(true);
 	}
-//	public static void main(String[] args) {
-//		AvoidGame ag = new AvoidGame();
-//		Thread agdrop = new Thread(ag,"알떨어진다");
-//		agdrop.start();
-//	}
 
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub
 		setVisible(true);
-//		ArrayList<JLabel> list = new ArrayList<>();
 		for(int i = 0; i<600;i++) {
 			try {
 				if((int)(Math.random()*10)>7) {
