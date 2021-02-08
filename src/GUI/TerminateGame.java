@@ -33,6 +33,8 @@ public class TerminateGame extends JFrame implements Runnable{
 				if(hitting) {
 					hitting=false;
 					if(enemyHp[0]<=0) {
+						if(YuushaStatus.getStage()>=9)
+							return;
 						YuushaStatus.setMaxHp(YuushaStatus.getMaxHp()+10);
 						YuushaStatus.setHp(YuushaStatus.getHp()+10);
 						enemy[0].setVisible(false);

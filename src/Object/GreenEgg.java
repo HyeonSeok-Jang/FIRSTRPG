@@ -68,6 +68,7 @@ public class GreenEgg extends superOfImg implements Runnable{
 			e.printStackTrace();
 		}
 		setVisible(false);
+		getParent().remove(this);
 	}
 
 }

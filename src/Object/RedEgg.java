@@ -68,5 +68,6 @@ public class RedEgg extends superOfImg implements Runnable{
 			e.printStackTrace();
 		}
 		setVisible(false);
+		getParent().remove(this);
 	}
 }
