@@ -17,7 +17,6 @@
 
 > パズル
 
-<img alt="puzzle1" src="/screenshots/puzzle1.PNG"  width="400" />
 ![puzzle1](/screenshots/puzzle1.PNG)
 ![puzzle2](/screenshots/puzzle2.PNG)
 ![puzzle3](/screenshots/puzzle3.PNG)
