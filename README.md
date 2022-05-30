@@ -17,21 +17,26 @@
 
 > パズル
 
-![puzzle1](/screenshots/puzzle1.PNG)
-![puzzle2](/screenshots/puzzle2.PNG)
-![puzzle3](/screenshots/puzzle3.PNG)
-![puzzle4](/screenshots/puzzle4.PNG)
+<img alt="puzzle1" src="/screenshots/puzzle1.PNG" width="400"/> <img alt="puzzle2" src="/screenshots/puzzle2.PNG" width="400"/>
+<img alt="puzzle3" src="/screenshots/puzzle3.PNG" width="400"/>
+
+## おもしろいストーリー
+
+> おもしろいストーリー
+
+<img alt="puzzle4" src="/screenshots/puzzle4.PNG" width="400"/>
 
 ## クイズ
 
 > クイズ
-![quiz](/screenshots/quiz.PNG)
+<img alt="quiz" src="/screenshots/quiz.PNG" width="400"/>
 
 ## さまざまなエンディングと分岐
 
 > さまざまなエンディングと分岐
-![branch](/screenshots/branch.PNG)
-![end](/screenshots/end.PNG)
+
+<img alt="branch" src="/screenshots/branch.PNG" width="400"/> <img alt="end" src="/screenshots/end.PNG" width="400"/>
+
 
 
 もと: https://playentry.org/project/5ef8ae1f02a55b0019d3d5ed
