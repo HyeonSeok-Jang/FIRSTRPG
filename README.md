@@ -2,7 +2,7 @@
 
 > 引っ越し祝いに出たお姫様救い
 
-![main](./screenshots/main.png)
+![main](/screenshots/main.PNG)
 
 # あらすじ
 
@@ -17,12 +17,22 @@
 
 > パズル
 
+<img alt="puzzle1" src="/screenshots/puzzle1.PNG"  width="400" />
+![puzzle1](/screenshots/puzzle1.PNG)
+![puzzle2](/screenshots/puzzle2.PNG)
+![puzzle3](/screenshots/puzzle3.PNG)
+![puzzle4](/screenshots/puzzle4.PNG)
+
 ## クイズ
 
 > クイズ
+![quiz](/screenshots/quiz.PNG)
 
 ## さまざまなエンディングと分岐
 
 > さまざまなエンディングと分岐
+![branch](/screenshots/branch.PNG)
+![end](/screenshots/end.PNG)
+
 
 もと: https://playentry.org/project/5ef8ae1f02a55b0019d3d5ed
